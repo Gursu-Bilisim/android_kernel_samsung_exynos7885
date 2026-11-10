@@ -47,6 +47,27 @@
 /* 1 plane -- 8bit Y, 2bit Y, 8bit Cb + Cr interleaved, 2bit Cb + Cr interleaved, non contiguous */
 #define V4L2_PIX_FMT_NV12N_10B		v4l2_fourcc('B', 'N', '1', '2')
 
+/* for hardware/samsung_slsi-linaro/exynos (values as in Exynos7885-aosp lineage-24.0) */
+#define V4L2_PIX_FMT_NV12M_S10B v4l2_fourcc('B', 'M', '1', '2')
+#define V4L2_PIX_FMT_NV21M_S10B v4l2_fourcc('B', 'M', '2', '1')
+#define V4L2_PIX_FMT_NV16M_S10B v4l2_fourcc('B', 'M', '1', '6')
+#define V4L2_PIX_FMT_NV61M_S10B v4l2_fourcc('B', 'M', '6', '1')
+#define V4L2_PIX_FMT_NV12M_P010 v4l2_fourcc('P', 'M', '1', '2')
+#define V4L2_PIX_FMT_NV21M_P010 v4l2_fourcc('P', 'M', '2', '1')
+#define V4L2_PIX_FMT_NV16M_P210 v4l2_fourcc('P', 'M', '1', '6')
+#define V4L2_PIX_FMT_NV61M_P210 v4l2_fourcc('P', 'M', '6', '1')
+#define V4L2_PIX_FMT_NV12_P010 v4l2_fourcc('P', 'N', '1', '2')
+#define V4L2_PIX_FMT_NV12M_SBWC_8B  v4l2_fourcc('M', '1', 'S', '8')
+#define V4L2_PIX_FMT_NV12M_SBWC_10B v4l2_fourcc('M', '1', 'S', '1')
+#define V4L2_PIX_FMT_NV21M_SBWC_8B  v4l2_fourcc('M', '2', 'S', '8')
+#define V4L2_PIX_FMT_NV21M_SBWC_10B v4l2_fourcc('M', '2', 'S', '1')
+#define V4L2_PIX_FMT_NV12N_SBWC_8B  v4l2_fourcc('N', '1', 'S', '8')
+#define V4L2_PIX_FMT_NV12N_SBWC_10B v4l2_fourcc('N', '1', 'S', '1')
+#define V4L2_PIX_FMT_NV12M_SBWCL_8B v4l2_fourcc('M', '1', 'L', '8')
+#define V4L2_PIX_FMT_NV12M_SBWCL_10B    v4l2_fourcc('M', '1', 'L', '1')
+#define V4L2_PIX_FMT_NV12N_SBWCL_8B v4l2_fourcc('N', '1', 'L', '8')
+#define V4L2_PIX_FMT_NV12N_SBWCL_10B    v4l2_fourcc('N', '1', 'L', '1')
+
 /* helper macros */
 #ifndef __ALIGN_UP
 #define __ALIGN_UP(x, a)		(((x) + ((a) - 1)) & ~((a) - 1))
